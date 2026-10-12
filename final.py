@@ -24,7 +24,7 @@ print("when you open the door it opens up into a big room, marble colums grew up
 Question2 = input("What do you want to do in the room. You can; sit still(1), or peek out of the room(2):\n ")
 if Question2 == "1":
     print("You wait for 3 hours before a 2 armed gaurds comes into the room. You got caught")
-playagian = input("\nYou had {}/4 of the Item's. Do you want to play again (Y/N):\n ").strip().lower()
+playagian = input("\nYou had {_}/4 of the Item's. Do you want to play again (Y/N):\n ").strip().lower()
 if playagain != "y":
     print("thanks for playing")
 
@@ -53,18 +53,10 @@ elif granny_choice1 == 3:
 
 # CD, Room Three, 2000s
     def era_2000():
-         print("You now enter a room that is covered with animals on the wallpaper. You take a look around the room and see a calendar on the wall. It is currently June 9th, 2004, and it sure looks like it. ")
-    print("Goal: steal the lolly pop from the baby without making it cry.")
-    print("What would you like to do?")
-    baby_choice = input(f"You can: Quickly try and grab the lollypop and run (1), wait (2), or search the room (3)")
-if baby_choice == "1":
-        print("You look around and spot a sugary little snack, a lollypop! You run to to the lollypop and... ")
-if baby_choice == "2":
-        print(f"You curl up into a little ball looking around the room when all of a sudden, a little baby is running after you! You spring up and run across the room thinking you're safe, but the baby comes around a little blue chair and catches you! OH NO. The baby grabs you in the middle of your tail and wips you around like a lasso.\n" \
-        "You lost! You had {_}/4 items. Would you like to play again {yes} or {no}?")
-else: 
-     baby_choice == "3"
-     print(f"You creep around the corner of a little blue chair to see a little baby laying down in it's crib. {player_name}")
+        print("Welcome to the 2000s room!\n")
+        print("Welcome to the You hear enter a room that has blue stripes on the walls and a small white crib by a window letting light stream through. A baby lays on it's stomach along with a little lollypop laying not far from their face. Your goal is to get that sugary little treat before the gremlin eats it all up!\n")
+        print("Do you want to:\n (bolt) for the lollypop\n(wait) for the baby to waltz away\n(persuade) the baby to give you the candy?\nPlease type your anser in (parentheses):")
+    choice_one_room_2000 = input()
 
 
 # AP, Room Four, 3000s
