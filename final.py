@@ -11,6 +11,12 @@ player_name = input("What is your name?:")
 # AP, starting of the story, telling the player their goal, the story, and instructions.
 print(f"Once upon a time, there was this really STUPID ferret named {player_name}, who loved walking through doors to different time stamps. This ferret {player_name} accidently got trapped in the 1800s because {player_name} wanted to see the signing of the Declaration Of Independence. Unfortunately, {player_name} doesn't have their history straight and didn't go to August 2nd, 1776, because they're STUPID. Just kidding. We love you. Good luck!!\nThou awakest within a most exceedingly antiquated chamber, most peculiar in fashion, as though plucked straight from the nineteenth century—wink, wink. Before thee stands a door. With great curiosity, thou dost approach and attempt to open it, only to discover that the blasted thing is firmly locked. OH, DEAR! Whatever, pray tell, shallst thou do now?!?\n")
 
+def era_2000():
+        print("Welcome to the 2000s room!\n")
+        print("Welcome to the You hear enter a room that has blue stripes on the walls and a small white crib by a window letting light stream through. A baby lays on it's stomach along with a little lollypop laying not far from their face. Your goal is to get that sugary little treat before the gremlin eats it all up!\n")
+        print("Do you want to:\n (bolt) for the lollypop\n(wait) for the baby to waltz away\n(persuade) the baby to give you the candy?\nPlease type your answer in (parentheses):")
+choice_one_room_2000 = input()
+
 
 # JA, Variable for the first room/era
 print("Upon entering the ancient house, thou art greeted by a humble room, its walls adorned with simple decorations and aged portraits. The wooden floors creak beneath thy feet, and the air is thick with the scent of old wood and parchment. At the very center of the room hangs the Declaration of Independence, proudly displayed as though it were a treasure of the highest importance. Gathered around it stand a company of distinguished gentlemen, dressed in fine coats, powdered wigs, and polished shoes. They speak amongst themselves in hushed, serious tones, their faces bearing the solemn expressions of men burdened with great responsibility. The room may lack grand riches and extravagant furnishings, yet it carries an air of history and importance, as though the very walls have witnessed the birth of a new nation.\n ")
@@ -55,7 +61,7 @@ elif granny_choice1 == 3:
     def era_2000():
         print("Welcome to the 2000s room!\n")
         print("Welcome to the You hear enter a room that has blue stripes on the walls and a small white crib by a window letting light stream through. A baby lays on it's stomach along with a little lollypop laying not far from their face. Your goal is to get that sugary little treat before the gremlin eats it all up!\n")
-        print("Do you want to:\n (bolt) for the lollypop\n(wait) for the baby to waltz away\n(persuade) the baby to give you the candy?\nPlease type your anser in (parentheses):")
+        print("Do you want to:\n (bolt) for the lollypop\n(wait) for the baby to waltz away\n(persuade) the baby to give you the candy?\nPlease type your answer in (parentheses):")
     choice_one_room_2000 = input()
 
 
@@ -76,3 +82,13 @@ if future_choice2 == "Yes":
     print("You pick it up and notice its a key. The key has five grooves on the bottom, and it looks made for someone specifically. ")
 else:
     print("You leave the shinny object and your tail his the on botton of the jetpack, I know very inconveinent, and you fly thorught the rich guys roof and fly into the clouds for forever.\nYou lost! You had {_}/4 items. Would you like to play again? (yes) or (no)")
+
+
+# CD, final scorings
+
+score = 0
+has_declaration = False
+has_dentures = False
+has_lollypop = False
+has_jetpack = False
+has_declaration_wrong = False
