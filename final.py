@@ -16,7 +16,7 @@ def first(player_name):
     # JA, Variable for the first room/era
     print(f"Upon entering the ancient house, thou art greeted by a humble room, its walls adorned with simple decorations and aged portraits. The wooden floors creak beneath thy feet, and the air is thick with the scent of old wood and parchment. At the very center of the room hangs the Declaration of Independence, proudly displayed as though it were a treasure of the highest importance. Gathered around it stand a company of distinguished gentlemen, dressed in fine coats, powdered wigs, and polished shoes. They speak amongst themselves in hushed, serious tones, their faces bearing the solemn expressions of men burdened with great responsibility. The room may lack grand riches and extravagant furnishings, yet it carries an air of history and importance, as though the very walls have witnessed the birth of a new nation.\n You push open the door and tumble directly into Independence Hall in the 1800s. The room is filled with polished wooden furniture, serious-looking gentlemen, and enough historical documents to give a librarian a heart attack. At the center of the room, displayed proudly on a pedestal, sits the DECLARATION OF INDEPENDENCE. It is surrounded by guards who look like they haven't smiled since the invention of the wheel. Your whiskers twitch. Your nose wiggles. Your three brain cells hold a meeting. One says, 'That looks important.'' Another says, 'That looks chewable.'The third has decided that the pedestal would make an excellent place for a nap. Your mission is to steal the Declaration without getting caught. Unfortunately, you are a ferret approximately the size of a loaf of bread, and you have the subtlety of a falling piano.\n")
 
-    Question1 = input("What do you want to do in the room. You can: sit still(Sit), search the room more thoroughly(Search), to run and try to snatch it from under them(Run): \n").strip().lower()
+    Question1 = input("What do you want to do in the room. You can: sit still(Sit), search the room more thoroughly(Search), to run and try to snatch it from under them(Run): ").strip().lower()
 
     if Question1 == "sit":
         print(f"You decide that standing perfectly still is an excellent strategy. You sit. You blink. You inspect your tail. Five minutes pass. Then ten. A guard finally notices the suspiciously furry object sitting in the middle of Independence Hall.'WHAT IS THAT THING?' he shouts. You puff up your fur and hiss. The guards surround you before you can perform your emergency escape wiggle.\n GAME OVER! You have been arrested for suspicious loaf-shaped behavior. Even the founding fathers are disappointed in you.\n")
@@ -75,14 +75,6 @@ def grandma(player_name):
         print("")
 
 
-    granny_choice3 = input("Escape? (Y/N):").upper().strip()
-    if granny_choice3 == "Y":
-        print("test")
-    elif granny_choice3 == "N":
-        print("no")
-    else:
-        print("ARE YOU SERIOUS ABOUT THIS OR NOT???")
-
 # CD, Room Three, 2000s
 def current_era (player_name):
     print(f"\nWelcome to the 2000s room!\n")
@@ -129,7 +121,7 @@ def current_era (player_name):
     return True
 
 # AP, Room Four, 3000s
-def current_era (player_name):
+def future_era (player_name):
     print("Welcome to the 2000s room!\n")
     print("You burst through the door and land in a futuristic nightclub in the year 3000. Neon lights flash across the walls. Music pounds through the floor. Robots, humans, and suspiciously tall aliens crowd the dance floor. You sniff the air. Expensive perfume. Metallic robot oil. Something that might be cheese. You briefly consider abandoning your mission to investigate the cheese situation. Then you spot it. A magnificent jetpack resting beside a very large man near the edge of the dance floor. THE JETPACK. Your eyes widen. Your whiskers twitch. Your three brain cells suddenly unite in perfect agreement: THAT THING IS OURS. Unfortunately, the man standing beside it appears to be its owner. He is enormous. You are a ferret. This is not an ideal matchup.")
 
@@ -236,7 +228,7 @@ while True:
     else:
         has_lollipop = True
 
-    proceed = future(player_name)
+    proceed = future_era(player_name)
     if proceed == False:
         ask_to_play_again = True
         continue
