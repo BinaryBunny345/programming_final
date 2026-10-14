@@ -3,7 +3,6 @@
 
 import os.path
 
-
 print("Welcome to Being a Ferret 101!!")
 
 # GB, making question for information about player
